@@ -2,17 +2,34 @@
 * {
     padding: 0;
     margin: 0;
+    /*
     border: 1px solid black;
+    */
 }
 body {
     font-family: 'Alegreya Sans', sans-serif;
     background-color: lightgray;
 }
-
 /* Mobile first styles go here */
 
 /* Desktop styles go here */
 
+.logo-container {
+    display: flex;
+}
+#logo {
+   text-align: center;
+   margin: 0 auto;
+   width: 95%;
+}
+@media screen and (min-width: 800px) {
+    #logo {
+        text-align: center;
+        margin: 0 auto;
+        width: 20%;
+        height: auto;
+     } 
+}
 h1 {
     font-size: 1rem;
     text-align: center;
@@ -45,7 +62,8 @@ a, a:visited {
         text-decoration: none;
     }
 }
-.container {
+/* Dog container */
+.dog-container {
     display: flex; 
     margin: 0 auto;
     width: 335px;
@@ -54,34 +72,78 @@ a, a:visited {
     flex-wrap: wrap;
 }
 @media screen and (min-width: 800px) {
-    .container {
-        display: flex;
+    .dog-container {
+        display: inline-flex;
         margin: 20px 70px;
-        width: 1800px;
+        width: 1750px;
         justify-content: space-between;
     }
 }
-.left, .center, .right {
+/* Cat container */
+.cat-container {
+    display: flex; 
+    margin: 0 auto;
+    width: 350px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+@media screen and (min-width: 800px) {
+    .cat-container {
+        display: inline-flex;
+        margin: 20px 70px;
+        width: 1750px;
+        justify-content: space-between;
+    }
+}
+.left-dog, .center-dog, .right-dog {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 @media screen and (min-width: 800px) {
-    .left, .center, .right {
+    .left-dog, .center-dog, .right-dog {
         display: inline-flex;
+        align-items: baseline;
     }
 }
-.small {
+.left-cat, .center-cat, .right-cat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (min-width: 800px) {
+    .left-cat, .center-cat, .right-cat {
+        display: inline-flex;
+        align-items: baseline;
+    }
+}
+.dog {
     width: 220px;
     height: auto;
     border-radius: 1rem 0 2rem 0;
     margin: 10px 0;
 }
 @media screen and (min-width: 800px) {
-    .small {
+    .dog {
         width: 550px;
         height: auto;
         border-radius: 1rem 0 2rem 0;
+        border: 1px dotted black;
+    }
+}
+.cat {
+    width: 220px;
+    height: auto;
+    border-radius: 1rem 0 2rem 0;
+    margin: 10px 0;
+}
+@media screen and (min-width: 800px) {
+    .cat {
+        width: 550px;
+        height: auto;
+        border-radius: 1rem 0 2rem 0;
+        border: 1px dotted black;
     }
 }
 @keyframes transl {
@@ -114,4 +176,19 @@ img:hover {
 .quote-one {
     width: 220px;
     font-style: italic;
+}
+@media screen and (min-width: 800px) {
+    .quote-one {
+        font-style: italic;
+    }
+}
+#cat-quote {
+    margin: 15px;
+}
+@media screen and (min-width: 800px) {
+    #cat-quote {
+        width: 420px;
+        font-size: 1.5rem;
+        font-style: italic;
+    }
 }
