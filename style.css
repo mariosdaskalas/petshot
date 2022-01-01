@@ -2,6 +2,7 @@
 * {
     padding: 0;
     margin: 0;
+    border: 1px solid black;
 }
 body {
     font-family: 'Alegreya Sans', sans-serif;
@@ -45,11 +46,12 @@ a, a:visited {
     }
 }
 .container {
-    display: flex;
-    margin: 15px 30px;
-    width: 350px;
+    display: flex; 
+    margin: 0 auto;
+    width: 335px;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    /* border: 1px solid black; */
 }
 @media screen and (min-width: 800px) {
     .container {
@@ -57,14 +59,15 @@ a, a:visited {
         margin: 20px 70px;
         width: 1800px;
         justify-content: space-between;
+    }
 }
-}
-.left, .right {
-    display: inline-flex;
-    /* border: 1px solid red; */
+.left, .center, .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 @media screen and (min-width: 800px) {
-    .left, .right {
+    .left, .center, .right {
         display: inline-flex;
     }
 }
@@ -73,8 +76,6 @@ a, a:visited {
     height: auto;
     border-radius: 1rem 0 2rem 0;
     margin: 10px 0;
-    border: 1px solid black;
-    /* border: 1px solid green; */
 }
 @media screen and (min-width: 800px) {
     .small {
@@ -111,12 +112,6 @@ img:hover {
     }
 }
 .quote-one {
-    width: 195px;
-    /* border: 1px solid black; */
-}
-@media screen and (min-width: 800px) {
-    .quote-one {
-        width: 530px;
-        font-size: 1.5rem;
-    }
+    width: 220px;
+    font-style: italic;
 }
