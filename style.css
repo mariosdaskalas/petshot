@@ -96,6 +96,40 @@ a, a:visited {
         justify-content: space-between;
     }
 }
+/* Bird container */
+.bird-container {
+    display: flex; 
+    margin: 0 auto;
+    width: 350px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+@media screen and (min-width: 800px) {
+    .bird-container {
+        display: inline-flex;
+        margin: 20px 70px;
+        width: 1750px;
+        justify-content: space-between;
+    }
+}
+/* Horse container */
+.horse-container {
+    display: flex; 
+    margin: 0 auto;
+    width: 350px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+@media screen and (min-width: 800px) {
+    .horse-container {
+        display: inline-flex;
+        margin: 20px 70px;
+        width: 1750px;
+        justify-content: space-between;
+    }
+}
 .left-dog, .center-dog, .right-dog {
     display: flex;
     justify-content: center;
@@ -107,14 +141,26 @@ a, a:visited {
         align-items: baseline;
     }
 }
-.left-cat, .center-cat, .right-cat {
+.left-cat, .center-cat, .right-cat, .left-bird {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 @media screen and (min-width: 800px) {
-    .left-cat, .center-cat, .right-cat {
+    .left-cat, .center-cat, .right-cat, .right-bird {
         display: inline-flex;
+        align-items: baseline;
+    }
+}
+.left-horse, .right-horse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (min-width: 800px) {
+    .left-horse, .right-horse {
+        display: inline-flex;
+        justify-content: flex-start;
         align-items: baseline;
     }
 }
@@ -140,6 +186,32 @@ a, a:visited {
 @media screen and (min-width: 800px) {
     .cat {
         width: 550px;
+        height: auto;
+        border-radius: 1rem 0 2rem 0;
+    }
+}
+.bird {
+    width: 220px;
+    height: auto;
+    border-radius: 1rem 0 2rem 0;
+    margin: 10px 0;
+}
+@media screen and (min-width: 800px) {
+    .bird {
+        width: 830px;
+        height: auto;
+        border-radius: 1rem 0 2rem 0;
+    }
+}
+.horse {
+    width: 220px;
+    height: auto;
+    border-radius: 1rem 0 2rem 0;
+    margin: 10px 0;
+}
+@media screen and (min-width: 800px) {
+    .horse {
+        width: 830px;
         height: auto;
         border-radius: 1rem 0 2rem 0;
     }
@@ -188,5 +260,31 @@ img:hover {
         width: 420px;
         font-size: 1.5rem;
         font-style: italic;
+    }
+}
+#horse-quote {
+    margin: 15px;
+    text-align: center;
+    font-style: italic;
+}
+@media screen and (min-width: 800px) {
+    #horse-quote {
+        width: 420px;
+        font-size: 1.5rem;
+        font-style: italic;
+        text-align: center;
+        font-style: italic;
+    }
+}
+#credits {
+    text-align: center;
+    background-color: rgb(165, 160, 160);
+    margin-top: 0.7rem;
+}
+@media screen and (min-width: 800px) {
+    #credits {
+        text-align: center;
+        background-color: rgb(165, 160, 160);
+        font-size: 1.5rem;
     }
 }
