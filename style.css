@@ -129,7 +129,6 @@ a, a:visited {
         width: 550px;
         height: auto;
         border-radius: 1rem 0 2rem 0;
-        border: 1px dotted black;
     }
 }
 .cat {
@@ -143,7 +142,6 @@ a, a:visited {
         width: 550px;
         height: auto;
         border-radius: 1rem 0 2rem 0;
-        border: 1px dotted black;
     }
 }
 @keyframes transl {
