@@ -42,6 +42,8 @@ function generateMale() {
     let randomMaleImg = male[randomMale][0].image;
 
     document.getElementById("maleimg").src = randomMaleImg;
+
+    console.log(`Male Option: ${randomMale}`);
 }
 
 /* Female Section */
@@ -86,6 +88,25 @@ function generateFemale() {
     let randomFemaleImg = female[randomFemale][0].image;
 
     document.getElementById("femaleimg").src = randomFemaleImg;
+
+    console.log(`Female Option: ${randomFemale}`);
 }
 
+let lockMale = document.getElementById("lock-male");
+let lockFemale = document.getElementById("lock-female");
+let nextMale = document.getElementById("next-male");
+let nextFemale = document.getElementById("next-female");
+
+lockMale.onclick = function () {
+    this.disabled = true;
+    nextMale.disabled = true;
+    nextMale.title = "🚫 Disabled! You choice is now locked!";
+    this.title = "🚫 Disabled! You choice is now locked!";
+}
+lockFemale.onclick = function () {
+    this.disabled = true;
+    nextFemale.disabled = true;
+    nextFemale.title = "🚫 Disabled! You choice is now locked!";
+    this.title = "🚫 Disabled! You choice is now locked!";
+}
 

@@ -238,11 +238,13 @@ button:hover {
         font-size: 1.5rem;
     }
 }
-#next-male, #next-female {
+#next-male, #next-female, #lock-male, #lock-female {
     margin-bottom: 0.8rem;
+    margin-right: 0.8rem;
 }
 @media screen and (min-width: 800px) {
-    #next-male, #next-female {
+    #next-male, #next-female, #lock-male, #lock-female  {
         margin-bottom: 0.8rem;
+        margin-right: 0.8rem;
     }
 }
