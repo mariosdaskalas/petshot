@@ -82,14 +82,14 @@ a, a:visited {
         justify-content: space-between;
     }
 }
-.left-dog, .center-dog, .right-dog {
+.left-dog, .right-dog {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
 @media screen and (min-width: 800px) {
-    .left-dog, .center-dog, .right-dog {
+    .left-dog, .right-dog {
         /*
         display: inline-flex;
         align-items: baseline;
@@ -99,6 +99,31 @@ a, a:visited {
         align-items: center;
         flex-wrap: wrap;
         width: 35%;
+    }
+}
+.center-dog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: lightcoral;
+    border-radius: 1rem 0 2rem 0;
+}
+@media screen and (min-width: 800px) {
+    .center-dog {
+        /*
+        display: inline-flex;
+        align-items: baseline;
+        */
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 25%;
+        text-align: center;
+        background-color: lightcoral;
+        border-radius: 1rem 0 2rem 0;
     }
 }
 .dog {
@@ -204,6 +229,7 @@ button:hover {
 }
 #maledog-title, #femaledog-title {
     text-align: center;
+    margin-top: 1rem;
 }
 @media screen and (min-width: 800px) {
     #maledog-title, #femaledog-title {
