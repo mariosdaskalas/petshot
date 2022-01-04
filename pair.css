@@ -63,7 +63,7 @@ a, a:visited {
         text-decoration: none;
     }
 }
-/* Dog container */
+/* dog container */
 .dog-container {
     display: flex; 
     margin: 0 auto;
@@ -82,95 +82,23 @@ a, a:visited {
         justify-content: space-between;
     }
 }
-/* Cat container */
-.cat-container {
-    display: flex; 
-    margin: 0 auto;
-    /* width: 350px; */
-    width: 90%;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-@media screen and (min-width: 800px) {
-    .cat-container {
-        display: inline-flex;
-        margin: 20px 70px;
-        /* width: 1750px; */
-        width: 92%;
-        justify-content: space-between;
-    }
-}
-/* Bird container */
-.bird-container {
-    display: flex; 
-    margin: 0 auto;
-    /* width: 350px; */
-    width: 90%;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-@media screen and (min-width: 800px) {
-    .bird-container {
-        display: inline-flex;
-        margin: 20px 70px;
-        /* width: 1750px; */
-        width: 92%;
-        justify-content: space-between;
-    }
-}
-/* Horse container */
-.horse-container {
-    display: flex; 
-    margin: 0 auto;
-    /* width: 350px; */
-    width: 90%;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-@media screen and (min-width: 800px) {
-    .horse-container {
-        display: inline-flex;
-        margin: 20px 70px;
-        /* width: 1750px; */
-        width: 92%;
-        justify-content: space-between;
-    }
-}
 .left-dog, .center-dog, .right-dog {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 @media screen and (min-width: 800px) {
     .left-dog, .center-dog, .right-dog {
+        /*
         display: inline-flex;
         align-items: baseline;
-    }
-}
-.left-cat, .center-cat, .right-cat, .left-bird {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-@media screen and (min-width: 800px) {
-    .left-cat, .center-cat, .right-cat, .right-bird {
+        */
         display: inline-flex;
-        align-items: baseline;
-    }
-}
-.left-horse, .right-horse {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-@media screen and (min-width: 800px) {
-    .left-horse, .right-horse {
-        display: inline-flex;
-        justify-content: flex-start;
-        align-items: baseline;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 35%;
     }
 }
 .dog {
@@ -182,49 +110,8 @@ a, a:visited {
 }
 @media screen and (min-width: 800px) {
     .dog {
-        width: 550px;
-        height: auto;
-        border-radius: 1rem 0 2rem 0;
-    }
-}
-.cat {
-    /* width: 220px; */
-    width: 90%;
-    height: auto;
-    border-radius: 1rem 0 2rem 0;
-    margin: 10px 0;
-}
-@media screen and (min-width: 800px) {
-    .cat {
-        width: 550px;
-        height: auto;
-        border-radius: 1rem 0 2rem 0;
-    }
-}
-.bird {
-    /* width: 220px; */
-    width: 90%;
-    height: auto;
-    border-radius: 1rem 0 2rem 0;
-    margin: 10px 0;
-}
-@media screen and (min-width: 800px) {
-    .bird {
-        width: 830px;
-        height: auto;
-        border-radius: 1rem 0 2rem 0;
-    }
-}
-.horse {
-    /* width: 220px; */
-    width: 90%;
-    height: auto;
-    border-radius: 1rem 0 2rem 0;
-    margin: 10px 0;
-}
-@media screen and (min-width: 800px) {
-    .horse {
-        width: 830px;
+        /* width: 550px; */
+        width: 90%;
         height: auto;
         border-radius: 1rem 0 2rem 0;
     }
@@ -256,36 +143,13 @@ img:hover {
         animation-duration: 2.5s;
     }
 }
-.quote-one {
-    width: 220px;
-    font-style: italic;
-}
-@media screen and (min-width: 800px) {
-    .quote-one {
-        font-style: italic;
-    }
-}
-#cat-quote {
+#match-status {
     margin: 15px;
 }
 @media screen and (min-width: 800px) {
-    #cat-quote {
+    #match-status {
         width: 420px;
         font-size: 1.5rem;
-        font-style: italic;
-    }
-}
-#horse-quote {
-    margin: 15px;
-    text-align: center;
-    font-style: italic;
-}
-@media screen and (min-width: 800px) {
-    #horse-quote {
-        width: 420px;
-        font-size: 1.5rem;
-        font-style: italic;
-        text-align: center;
         font-style: italic;
     }
 }
@@ -336,5 +200,23 @@ button:hover {
 @media screen and (min-width: 800px) {
     button:hover {
         text-decoration: underline;
+    }
+}
+#maledog-title, #femaledog-title {
+    text-align: center;
+}
+@media screen and (min-width: 800px) {
+    #maledog-title, #femaledog-title {
+        text-align: center;
+        font-style: italic;
+        font-size: 1.5rem;
+    }
+}
+#next-male, #next-female {
+    margin-bottom: 0.8rem;
+}
+@media screen and (min-width: 800px) {
+    #next-male, #next-female {
+        margin-bottom: 0.8rem;
     }
 }
