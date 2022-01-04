@@ -109,6 +109,7 @@ a, a:visited {
     text-align: center;
     background-color: lightcoral;
     border-radius: 1rem 0 2rem 0;
+    padding: 1rem;
 }
 @media screen and (min-width: 800px) {
     .center-dog {
@@ -124,6 +125,7 @@ a, a:visited {
         text-align: center;
         background-color: lightcoral;
         border-radius: 1rem 0 2rem 0;
+        padding-bottom: 4rem;
     }
 }
 .dog {
@@ -168,11 +170,11 @@ img:hover {
         animation-duration: 2.5s;
     }
 }
-#match-status {
+#match-status, #final-pair {
     margin: 15px;
 }
 @media screen and (min-width: 800px) {
-    #match-status {
+    #match-status, #final-pair {
         width: 420px;
         font-size: 1.5rem;
         font-style: italic;
