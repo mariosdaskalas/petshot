@@ -16,7 +16,14 @@ body {
 /* Mobile first styles go here */
 
 /* Desktop styles go here */
-
+#pair-title {
+    color: black;
+}
+@media screen and (min-width: 800px) {
+    #pair-title {
+        color: black;
+    }
+}
 #btn-pair {
     color: black;
 }
@@ -337,13 +344,13 @@ img:hover {
 }
 button {
     padding: 7px;
-    background-color: #f5cac2;
+    /* background-color: #f5cac2; */
     border-radius: 1rem 0 1.3rem 0;
 }
 @media screen and (min-width: 800px) {
     button {    
         padding: 12px;
-        background-color: #f5cac2;
+        /* background-color: #f5cac2; */
         border-radius: 1rem 0 1.3rem 0;
         cursor: pointer;
     }
