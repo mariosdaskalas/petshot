@@ -1,21 +1,20 @@
 /* General Styles */
+
 * {
     padding: 0;
     margin: 0;
-    /* border: 1px solid black; */
 }
 body {
     font-family: 'Alegreya Sans', sans-serif;
-    /* background-color: lightgray; */
     background-color: #f5cac2;
 }
 ::selection {
-    /* background-color: rgb(229, 147, 147); */
     background-color: #ed7966;
 }
-/* Mobile first styles go here */
+/* Mobile first styles go first */
 
-/* Desktop styles go here */
+/* Desktop styles go second */
+
 #pair-title {
     color: black;
 }
@@ -81,10 +80,10 @@ a, a:visited {
     }
 }
 /* Dog container */
+
 .dog-container {
     display: flex; 
     margin: 0 auto;
-    /* width: 350px; */
     width: 90%;
     justify-content: center;
     align-items: center;
@@ -94,16 +93,15 @@ a, a:visited {
     .dog-container {
         display: inline-flex;
         margin: 20px 70px;
-        /* width: 1750px; */
         width: 92%;
         justify-content: space-between;
     }
 }
 /* Cat container */
+
 .cat-container {
     display: flex; 
     margin: 0 auto;
-    /* width: 350px; */
     width: 90%;
     justify-content: center;
     align-items: center;
@@ -113,16 +111,15 @@ a, a:visited {
     .cat-container {
         display: inline-flex;
         margin: 20px 70px;
-        /* width: 1750px; */
         width: 92%;
         justify-content: space-between;
     }
 }
 /* Bird container */
+
 .bird-container {
     display: flex; 
     margin: 0 auto;
-    /* width: 350px; */
     width: 90%;
     justify-content: center;
     align-items: center;
@@ -132,16 +129,15 @@ a, a:visited {
     .bird-container {
         display: inline-flex;
         margin: 20px 70px;
-        /* width: 1750px; */
         width: 92%;
         justify-content: space-between;
     }
 }
 /* Horse container */
+
 .horse-container {
     display: flex; 
     margin: 0 auto;
-    /* width: 350px; */
     width: 90%;
     justify-content: center;
     align-items: center;
@@ -151,11 +147,13 @@ a, a:visited {
     .horse-container {
         display: inline-flex;
         margin: 20px 70px;
-        /* width: 1750px; */
         width: 92%;
         justify-content: space-between;
     }
 }
+
+/* Inner Containers */
+
 .left-dog, .center-dog, .right-dog {
     display: flex;
     justify-content: center;
@@ -190,8 +188,10 @@ a, a:visited {
         align-items: baseline;
     }
 }
+
+/* Images */
+
 .dog {
-    /* width: 220px; */
     width: 90%;
     height: auto;
     border-radius: 1rem 0 2rem 0;
@@ -205,7 +205,6 @@ a, a:visited {
     }
 }
 .cat {
-    /* width: 220px; */
     width: 90%;
     height: auto;
     border-radius: 1rem 0 2rem 0;
@@ -219,7 +218,6 @@ a, a:visited {
     }
 }
 .bird {
-    /* width: 220px; */
     width: 90%;
     height: auto;
     border-radius: 1rem 0 2rem 0;
@@ -233,7 +231,6 @@ a, a:visited {
     }
 }
 .horse {
-    /* width: 220px; */
     width: 90%;
     height: auto;
     border-radius: 1rem 0 2rem 0;
@@ -246,6 +243,8 @@ a, a:visited {
         border-radius: 1rem 0 2rem 0;
     }
 }
+
+/* Animations */
 @keyframes transl {
     0% {
         transform: rotate(0deg);
@@ -273,6 +272,9 @@ img:hover {
         animation-duration: 2.5s;
     }
 }
+
+/* Quotes */
+
 .quote-one {
     width: 220px;
     font-style: italic;
@@ -306,9 +308,11 @@ img:hover {
         font-style: italic;
     }
 }
+
+/* Footer */
+
 #credits {
     text-align: center;
-    /* background-color: rgb(165, 160, 160); */
     background-color: #4c4ea5;
     color: white;
     margin-top: 0.7rem;
@@ -317,7 +321,6 @@ img:hover {
 @media screen and (min-width: 800px) {
     #credits {
         text-align: center;
-        /* background-color: rgb(165, 160, 160); */
         background-color: #4c4ea5;
         color: white;
         font-size: 1.5rem;
@@ -325,7 +328,6 @@ img:hover {
     }
 }
 #match-game {
-    /* background-color: lightcoral; */
     background-color: #4c4ea5;
     text-align: center;
     margin-bottom: 15px;
@@ -334,7 +336,6 @@ img:hover {
 }
 @media screen and (min-width: 800px) {
     #match-game {
-        /* background-color: lightcoral; */
         background-color: #4c4ea5;
         text-align: center;
         font-size: 1.7rem;
@@ -342,15 +343,16 @@ img:hover {
         font-style: italic;
     }
 }
+
+/* Buttons */
+
 button {
     padding: 7px;
-    /* background-color: #f5cac2; */
     border-radius: 1rem 0 1.3rem 0;
 }
 @media screen and (min-width: 800px) {
     button {    
         padding: 12px;
-        /* background-color: #f5cac2; */
         border-radius: 1rem 0 1.3rem 0;
         cursor: pointer;
     }

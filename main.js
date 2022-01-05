@@ -1,6 +1,4 @@
-console.log(`This works!`);
-
-/* Male Section */
+/* Male Array */
 
 let male = {
     "0": [
@@ -37,6 +35,10 @@ let male = {
 
 document.getElementById("next-male").addEventListener("click", generateMale);
 
+/* First assign a value, because some might
+go with the first options
+*/
+
 let randomMaleName = male[0][0].name;
 
 function generateMale() {
@@ -49,7 +51,7 @@ function generateMale() {
     console.log(`Male Option: ${randomMale}`);
 }
 
-/* Female Section */
+/* Female Array */
 
 let female = {
     "0": [
@@ -86,6 +88,10 @@ let female = {
 
 document.getElementById("next-female").addEventListener("click", generateFemale);
 
+/* First assign a value, because some might
+go with the first options
+*/
+
 let randomFemaleName = female[0][0].name;
 
 function generateFemale() {
@@ -104,6 +110,8 @@ let nextMale = document.getElementById("next-male");
 let nextFemale = document.getElementById("next-female");
 let countMale = 0;
 let countFemale = 0;
+
+/* Create array to push names */
 let arrMale = [];
 let arrFemale = [];
 let arrFinal = [];
@@ -115,9 +123,13 @@ lockMale.onclick = function () {
     this.title = "🚫 Disabled! You choice is now locked!";
     countMale++;
     console.log(`Count Male: ${countMale}`);
+
+    /* If clicked once */
     if (countMale == 1) {
         document.getElementById("match-status").innerHTML = `Male is Choosen: ${randomMaleName}`;
     }
+
+    // Add male name to specified array
     arrMale.push(randomMaleName);
     console.log(arrMale);
 }
@@ -129,15 +141,20 @@ lockFemale.onclick = function () {
     this.title = "🚫 Disabled! You choice is now locked!";
     countFemale++;
     console.log(`Count Female: ${countFemale}`);
+
+    /* If clicked once */
     if (countFemale == 1) {
         document.getElementById("match-status").innerHTML = `Female is Choosen: ${randomFemaleName}`;
     }
+
+    // Add female name to specified array
     arrFemale.push(randomFemaleName);
     console.log(arrFemale);
 }
 
 document.getElementById("show-pair").addEventListener("click", showPair);
 
+/* Show matching pairs */
 function showPair() {
    document.getElementById("final-pair").innerHTML = `Male: ${randomMaleName} - Female: ${randomFemaleName}`; 
    document.getElementById("show-pair").style.display = "none";
