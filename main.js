@@ -155,6 +155,7 @@ lockFemale.onclick = function () {
 document.getElementById("show-pair").addEventListener("click", showPair);
 
 /* Show matching pairs */
+
 function showPair() {
    document.getElementById("final-pair").innerHTML = `Male: ${randomMaleName} - Female: ${randomFemaleName}`; 
    document.getElementById("show-pair").style.display = "none";
